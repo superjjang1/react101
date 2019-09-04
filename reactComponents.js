@@ -1,4 +1,4 @@
 ReactDOM.render(
-    <h1>What</h1>,
+    <Card />,
     document.querySelector('#root')
 )
