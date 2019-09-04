@@ -10,11 +10,11 @@ function Data(props){
                     <div className="card-image">
                         <img src={props.data.image} />
                     </div>
-                    <div className="card-title">
-                        <p>{props.data.course}</p>
-                    </div>
-                    <div className="card-content">
+                    <span className="card-title">
                         <p>{props.data.instructor}</p>
+                    </span>
+                    <div className="card-content">
+                        <p>{props.data.course}</p>
                     </div>
                 </div>
             </div>    
