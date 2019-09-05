@@ -13,9 +13,16 @@ class CoinFlip extends React.Component{
             this.heads,
             this.tails
         ]
+        this.stringer = "You flipped!"
+        this.stringer2 = "Oh yes!"
+        this.sentence = [
+            this.stringer,
+            this.stringer2
+        ]
         //React cares about state. a lot. React is special
         this.state = {
-            image: this.coin[0]
+            image: this.coin[0],
+            stringy: this.sentence[0]
         }
         this.flip = this.flip.bind(this) // the ugly way
     }
@@ -24,7 +31,7 @@ class CoinFlip extends React.Component{
 
     // }
     flip(){
-        console.log(this);
+        console.log("you're flipping doing it!");
         //listen.
         // console.log("Flip was CLicked, facts!");
         //never change state yourself, ever
@@ -32,6 +39,10 @@ class CoinFlip extends React.Component{
         let coinSide = Math.round(Math.random()); //0,1
         this.setState({
             image: this.coin[coinSide]
+        })
+        let stringSide = Math.round(Math.random());
+        this.setState({
+            stringy: this.sentence[stringSide]
         })
     }
 
@@ -46,6 +57,7 @@ class CoinFlip extends React.Component{
             <div className="coin-flip">
                 <button className="waves-effect waves-light btn" onClick={this.flip}>Flip!</button>
                 <img src={this.state.image} />
+                <span>{this.state.stringy}</span>
             </div>
         )
     }
