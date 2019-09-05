@@ -21,22 +21,23 @@ const data = [
     },
 ]
 
-function Data(props){
-    console.log(props.Data);
-    return(
-        <div className="col s12 m7">
-        <div className="card">
-            <div className="card-image">
-                <img src={props.data.image}/>
+// function Data(props){
+//     console.log(props.Data);
+//     return(
+//         <div className="col s12 m7">
+//         <div className="card">
+//             <div className="card-image">
+//                 <img src={props.data.image}/>
 
-            </div>
-            <div className="card-title">
-                <p>{props.data.instructor}</p>
-            </div>
-            <div className="card-action">
-                <p>{props.data.course}</p>
-            </div>
-        </div>
-        </div>
-    )
-}
+//             </div>
+//             <div className="card-title">
+//                 <p>{props.data.instructor}</p>
+//             </div>
+//             <div className="card-content">
+//                 <p>{props.data.course}</p>
+//             </div>
+//         </div>
+//         </div>
+//     )
+// }
+
